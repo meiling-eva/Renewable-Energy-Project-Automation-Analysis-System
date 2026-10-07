@@ -1,4 +1,4 @@
-# Solar Projects Automation Analysis System
+# Renewable Energy Project Automation Analysis System
 
 Full-stack app: **FastAPI** backend, **React (Vite)** frontend, **MySQL** database.
 
