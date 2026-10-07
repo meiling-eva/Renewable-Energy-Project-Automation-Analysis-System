@@ -1,0 +1,71 @@
+.project-dashboard {
+  margin-bottom: 1rem;
+}
+
+.pd-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.pd-kpi {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem;
+}
+
+.pd-kpi-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.pd-kpi-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.pd-kpi-hint {
+  font-size: 0.75rem;
+  color: #9ca3af;
+}
+
+.pd-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  gap: 0.75rem;
+}
+
+.pd-card {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  min-width: 0;
+}
+
+.pd-wide {
+  grid-column: 1 / -1;
+}
+
+.pd-card h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1rem;
+}
+
+.pd-empty {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pd-tooltip {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+}

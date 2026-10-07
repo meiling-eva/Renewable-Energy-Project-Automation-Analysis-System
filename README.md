@@ -1,0 +1,66 @@
+# Automation Process
+
+Full-stack app: **FastAPI** backend, **React (Vite)** frontend, **MySQL** database.
+
+```
+backend/    FastAPI + SQLAlchemy (PyMySQL driver)
+frontend/   React + Vite (proxies /api to the backend in dev)
+docker-compose.yml   MySQL 8.4 container
+```
+
+## 1. Database (MySQL)
+
+Option A — Docker:
+
+```bash
+docker compose up -d
+```
+
+Option B — Homebrew:
+
+```bash
+brew install mysql
+brew services start mysql
+mysql -u root < backend/db/init.sql
+```
+
+Both create database `automation_process` with user `app_user` / `app_password`.
+Tables are created automatically when the backend starts.
+
+## 2. Backend (FastAPI)
+
+```bash
+cd backend
+cp .env.example .env          # adjust DB credentials if needed
+../.venv/bin/pip install -r requirements.txt
+../.venv/bin/uvicorn app.main:app --reload
+```
+
+- API: http://127.0.0.1:8000/api
+- Swagger docs: http://127.0.0.1:8000/docs
+- Health check (incl. DB): http://127.0.0.1:8000/api/health
+
+### Endpoints
+
+| Method | Path                    | Description      |
+| ------ | ----------------------- | ---------------- |
+| GET    | `/api/projects`         | List projects    |
+| POST   | `/api/projects`         | Create project   |
+| GET    | `/api/projects/{id}`    | Get one project  |
+| PATCH  | `/api/projects/{id}`    | Update project   |
+| DELETE | `/api/projects/{id}`    | Delete project   |
+| GET    | `/api/projects/{id}/compliance-checks` | List a project's compliance checks |
+| POST   | `/api/projects/{id}/compliance-checks` | Add one check or a list of checks |
+| GET    | `/api/compliance-checks` | List checks (filter by `project_id`, `status`, `severity`, `rule_code`) |
+| GET    | `/api/compliance-checks/{id}` | Get one check |
+| DELETE | `/api/compliance-checks/{id}` | Delete check |
+
+## 3. Frontend (React)
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+Open http://localhost:5173.

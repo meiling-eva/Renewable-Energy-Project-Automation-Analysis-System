@@ -1,0 +1,6 @@
+Project,Code,Rule Name,Priority,Result,Notes,Date
+Smith Residence,pv ratio,PV/inverter ratio,Major,OK,Ratio 1.32,05/03/2026
+Smith Residence,pv ratio,PV/inverter ratio,Major,OK,Ratio 1.32,05/03/2026
+Outback Farm,BAT-01,,,fail,Battery undersized,2026-01-20
+City Office,GRID-02,Export limit,warn,,,next week
+Unknown Site,,Mystery,extreme,maybe,,

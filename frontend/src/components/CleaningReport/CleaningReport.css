@@ -1,0 +1,61 @@
+.cleaning-report {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cr-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 0.5rem;
+}
+
+.cr-stat {
+  background: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+}
+
+.cr-value {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.cr-label {
+  font-size: 0.8rem;
+  color: #6b7280;
+}
+
+.cr-good {
+  background: #f0fdf4;
+  border-color: #bbf7d0;
+}
+
+.cr-bad {
+  background: #fef2f2;
+  border-color: #fecaca;
+}
+
+.cr-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.cr-details h4 {
+  margin: 1rem 0 0.25rem;
+}
+
+.cr-details ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+.cr-note {
+  font-size: 0.85rem;
+  margin: 0.75rem 0 0;
+}
