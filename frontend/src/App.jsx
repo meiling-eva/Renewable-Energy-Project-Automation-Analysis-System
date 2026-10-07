@@ -55,7 +55,7 @@ function App() {
 
   return (
     <main className="container">
-      <h1>Solar Projects Automation Analysis System</h1>
+      <h1>Renewable Energy Project Automation Analysis Tool</h1>
 
       <h2>Extract File</h2>
       <FileExtractor onExtract={handleExtract} onClear={handleClear} />
