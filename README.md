@@ -66,7 +66,8 @@ npm run dev
 Open http://localhost:5173.
 
 ## 4. Main Page
-<img width="1160" height="383" alt="SPAAS Main page" src="https://github.com/user-attachments/assets/170e46f1-13cf-480a-aca5-50a3d705da10" />
+<img width="1069" height="344" alt="SPAAS Main Page" src="https://github.com/user-attachments/assets/fca382b1-5940-4f02-b4c7-c41f6bd6e9ed" />
+
 
 ## 5. Extract File and show the cleaned data
 <img width="1059" height="738" alt="SPAAS ExtractFiles" src="https://github.com/user-attachments/assets/33cabe36-f7b3-4d81-9ea1-b9adf5ccfd20" />
