@@ -1,4 +1,4 @@
-# Automation Process
+# Solar Projects Automation Analysis System
 
 Full-stack app: **FastAPI** backend, **React (Vite)** frontend, **MySQL** database.
 
@@ -64,3 +64,20 @@ npm run dev
 ```
 
 Open http://localhost:5173.
+
+Main Page
+<img width="1160" height="383" alt="SPAAS Main page" src="https://github.com/user-attachments/assets/170e46f1-13cf-480a-aca5-50a3d705da10" />
+
+Extract File and show the cleaned data
+<img width="1059" height="738" alt="SPAAS ExtractFiles" src="https://github.com/user-attachments/assets/33cabe36-f7b3-4d81-9ea1-b9adf5ccfd20" />
+
+<img width="1064" height="672" alt="SPAAS DataTable" src="https://github.com/user-attachments/assets/ba736e5d-76d3-4bc7-a4b9-80c1a9e9d9fd" />
+
+Data Dashboard
+<img width="947" height="769" alt="SPAAS DataDashbord" src="https://github.com/user-attachments/assets/1f23fd86-cf82-4d0f-bb4c-505e2656b658" />
+
+
+
+
+
+
